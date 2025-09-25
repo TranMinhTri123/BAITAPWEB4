@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.menu-ngang {
+  list-style: none;
+  display: flex;
+  background: orange;
+}
+.menu-ngang li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu-ngang li a:hover {
+  color: black;
+}
+
+.container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.menu-doc {
+  list-style: none;
+  width: 220px;
+  background: orange;
+  margin-right: 20px;
+}
+.menu-doc .title {
+  background: darkorange;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.menu-doc li {
+  border-bottom: 1px solid #fff;
+}
+.menu-doc li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu-doc li a:hover {
+  color: black;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.menu-da-cap {
+  list-style: none;
+  display: flex;
+  background: orange;
+  margin-bottom: 20px;
+}
+.menu-da-cap li {
+  position: relative;
+}
+.menu-da-cap li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu-da-cap li a:hover {
+  color: black;
+}
+.menu-da-cap ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: orange;
+  min-width: 180px;
+  list-style: none;
+}
+.menu-da-cap ul li {
+  border-bottom: 1px solid #fff;
+}
+.menu-da-cap li:hover > ul {
+  display: block;
+}
+.menu-da-cap ul li a:hover {
+  color: black;
+}
