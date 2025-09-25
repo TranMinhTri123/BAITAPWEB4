@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo trang web Đăng nhập/Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tạo trang web Đăng nhập/Đăng ký</h1>
+    <div class="selection">
+        <label for="choice">Chọn hành động:</label>
+        <select id="choice" onchange="showForm()">
+            <option value="none">Chọn...</option>
+            <option value="login">Đăng nhập</option>
+            <option value="register">Đăng ký</option>
+        </select>
+    </div>
+    <div id="login-form" class="form-box">
+        <h2>Đăng nhập</h2>
+        <label for="username">Mã người dùng:</label>
+        <input type="text" id="username" placeholder="Nhập mã...">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" placeholder="Nhập mật khẩu...">
+        <input type="submit" value="Đăng nhập">
+    </div>
+    <div id="register-form" class="form-box">
+        <h2>Đăng ký</h2>
+        <label for="new-username">Mã người dùng:</label>
+        <input type="text" id="new-username" placeholder="Nhập mã...">
+        <label for="new-password">Mật khẩu:</label>
+        <input type="password" id="new-password" placeholder="Nhập mật khẩu...">
+        <input type="submit" value="Đăng ký">
+    </div>
+
+    <script>
+        function showForm() {
+            const choice = document.getElementById('choice').value;
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+
+            if (choice === 'login') {
+                loginForm.classList.add('active');
+                registerForm.classList.remove('active');
+            } else if (choice === 'register') {
+                registerForm.classList.add('active');
+                loginForm.classList.remove('active');
+            } else {
+                loginForm.classList.remove('active');
+                registerForm.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>

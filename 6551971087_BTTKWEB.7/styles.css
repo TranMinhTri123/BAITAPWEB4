@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: red;
+}
+
+.selection {
+    margin: 20px;
+}
+
+.selection select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form-box {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #e6f3ff;
+    width: 200px;
+    margin: 0 auto;
+    display: none;
+}
+
+.form-box.active {
+    display: block;
+}
+
+.form-box h2 {
+    margin: 0 0 10px 0;
+    color: blue;
+}
+
+.form-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-box input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}

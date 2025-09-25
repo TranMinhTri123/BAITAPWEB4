@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <div class="form-box">
+        <label for="ho-va-ten">Họ và tên:</label>
+        <input type="text" id="ho-va-ten">
+
+        <label for="dia-chi">Địa chỉ:</label>
+        <input type="text" id="dia-chi">
+
+        <label for="dien-thoai">Điện thoại:</label>
+        <input type="text" id="dien-thoai">
+
+        <label>Giới tính:</label>
+        <input type="radio" id="nam" name="gender" value="Nam">
+        <label for="nam">Nam</label>
+        <input type="radio" id="nu" name="gender" value="Nữ">
+        <label for="nu">Nữ</label>
+        <input type="radio" id="khac" name="gender" value="Khác">
+        <label for="khac">Khác</label>
+
+        <label for="nghe-nghiep">Nghề nghiệp:</label>
+        <select id="nghe-nghiep">
+            <option value="">Chọn nghề nghiệp</option>
+            <option value="giao-vien">Giáo viên</option>
+            <option value="bac-si">Bác sĩ</option>
+            <option value="ky-su">Kỹ sư</option>
+            <option value="nhan-vien-van-phong">Nhân viên văn phòng</option>
+            <option value="doanh-nhan">Doanh nhân</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="nha-van">Nhà văn</option>
+            <option value="luat-su">Luật sư</option>
+        </select>
+
+        <label>Chọn sản phẩm tham gia:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="sp1" name="products" value="Sữa tươi Vinamilk">
+            <label for="sp1">Sữa tươi Vinamilk</label><br>
+            <input type="checkbox" id="sp2" name="products" value="Trà xanh C2">
+            <label for="sp2">Trà xanh C2</label><br>
+            <input type="checkbox" id="sp3" name="products" value="Nước ngọt Coca-Cola">
+            <label for="sp3">Nước ngọt Coca-Cola</label><br>
+            <input type="checkbox" id="sp4" name="products" value="Bánh snack Orion">
+            <label for="sp4">Bánh snack Orion</label><br>
+            <input type="checkbox" id="sp5" name="products" value="Kẹo KitKat">
+            <label for="sp5">Kẹo KitKat</label><br>
+            <input type="checkbox" id="sp6" name="products" value="Bia Heineken">
+            <label for="sp6">Bia Heineken</label><br>
+            <input type="checkbox" id="sp7" name="products" value="Mì gói Hảo Hảo">
+            <label for="sp7">Mì gói Hảo Hảo</label><br>
+            <input type="checkbox" id="sp8" name="products" value="Sữa chua Vinamilk">
+            <label for="sp8">Sữa chua Vinamilk</label><br>
+            <input type="checkbox" id="sp9" name="products" value="Nước mắm Phú Quốc">
+            <label for="sp9">Nước mắm Phú Quốc</label><br>
+            <input type="checkbox" id="sp10" name="products" value="Cà phê G7">
+            <label for="sp10">Cà phê G7</label>
+        </div>
+
+        <label for="so-nguoi-du-doan">Số người dự đoán tham gia:</label>
+        <input type="number" id="so-nguoi-du-doan" placeholder="25000" min="0">
+
+        <input type="submit" value="Đăng ký tham gia chương trình!!" class="submit-btn" onclick="dangKy()">
+        <p id="successMsg" style="display:none; color:green; margin-top:10px;">🎉 Đăng ký thành công!</p>
+    </div>
+</body>
+</html>
